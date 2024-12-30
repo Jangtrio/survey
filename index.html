@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이터널 리턴 캐릭터 추천</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="welcome-container">
+        <h1>루미아 섬에 오신걸 환영합니다.</h1>
+        <p>당신에게 맞는 실험체를 선택해보세요.</p>
+        <button onclick="startQuiz()">시작하기</button>
+    </div>
+    <div id="quiz-container" style="display: none;">
+        <div id="question-box">
+            <h2 id="question">연구자가 선호하는 실험체의 성별은 무엇인가요?</h2>
+            <div id="answers">
+                <button class="answer" onclick="selectAnswer('남')">남</button>
+                <button class="answer" onclick="selectAnswer('여')">여</button>
+            </div>
+        </div>
+        <button id="next-button" onclick="nextQuestion()" disabled>다음</button>
+    </div>
+    <!-- JavaScript 파일을 body 끝에 추가 -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

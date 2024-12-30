@@ -1,0 +1,124 @@
+/* 전체 페이지 기본 설정 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('images/home.png') no-repeat center center fixed; /* 전체 배경 이미지 */
+    background-size: cover; /* 화면 전체에 맞게 채우기 */
+    text-align: center;
+    color: #333;
+}
+
+/* 첫 화면 컨테이너 */
+#welcome-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 60px; /* 크기 확대 */
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 800px; /* 너비 확대 */
+}
+
+/* 첫 화면 텍스트 스타일 */
+#welcome-container h1 {
+    font-size: 3rem; /* 글자 크기 확대 */
+    margin-bottom: 30px;
+    color: #222;
+}
+
+#welcome-container p {
+    font-size: 1.5rem; /* 글자 크기 확대 */
+    margin-bottom: 40px;
+    color: #555;
+}
+
+/* 첫 화면 버튼 스타일 */
+#welcome-container button {
+    padding: 15px 30px; /* 버튼 크기 확대 */
+    font-size: 1.5rem; /* 글자 크기 확대 */
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#welcome-container button:hover {
+    background-color: #0056b3;
+}
+
+/* 퀴즈 컨테이너 스타일 */
+#quiz-container {
+    background: rgba(255, 255, 255, 0.8); /* 반투명 배경 */
+    padding: 40px; /* 크기 확대 */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 800px; /* 너비 확대 */
+    position: relative;
+}
+
+/* 질문 텍스트 스타일 */
+#quiz-container #question {
+    font-size: 2rem; /* 글자 크기 확대 */
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* 답변 버튼 컨테이너 */
+#answers {
+    margin: 30px 0; /* 간격 확대 */
+}
+
+/* 답변 버튼 스타일 */
+.answer {
+    display: block;
+    margin: 15px auto; /* 간격 확대 */
+    padding: 15px 30px; /* 버튼 크기 확대 */
+    font-size: 1.5rem; /* 글자 크기 확대 */
+    border: none;
+    background: #007BFF;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.answer:hover {
+    background: #0056b3;
+}
+
+/* 다음 버튼 스타일 */
+#next-button {
+    padding: 15px 30px; /* 버튼 크기 확대 */
+    font-size: 1.5rem; /* 글자 크기 확대 */
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#next-button:disabled {
+    background: #c6c8ca;
+    cursor: not-allowed;
+}
+
+/* 결과 이미지 크기 조정 */
+img {
+    max-width: 100%;
+    max-height: 450px; /* 크기를 1.5배로 증가 */
+    border-radius: 8px;
+    margin-top: 20px;
+    object-fit: contain; /* 비율 유지 */
+}
+
+
+
+
